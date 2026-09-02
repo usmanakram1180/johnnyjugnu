@@ -3,20 +3,20 @@ return (
 
     <div class="mqsec">
          <div class="mqtrack">
-            <div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried Chicken</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Gourmet Burgers</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Artisan Pizzas</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Fresh Wraps &amp; Rolls</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Loaded Fries</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Crispy Fried Chicken</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Gourmet Burgers</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Artisan Pizzas</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Fresh Wraps &amp; Rolls</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Loaded Fries</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Wehshi Burger</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Fillet Burger</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Tortilla Wrap</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Nugg Wrap</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Smol Wrap</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Crispy Wings</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Gochu Wings</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Tanji Wings</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Nuggets</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Lemonades</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Fries</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Drinks</div>
+            {/* <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div> */}
          </div>
       </div>
 );
