@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import menu1 from "../assets/menu/1.jpg";
 import menu2 from "../assets/menu/2.jpg";
@@ -16,6 +18,22 @@ function Menu() {
   const [added, setAdded] = useState(false);
 
   // =========================
+  // AOS ANIMATION
+  // =========================
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [filter]);
+
+  // =========================
   // MENU ITEMS
   // =========================
 
@@ -25,13 +43,13 @@ function Menu() {
       image: menu1,
       category: "burgers",
       categoryName: "Burgers",
-      title: "Classic Smash Burger",
+      title: "Wehshi Burger",
       description:
         "Double smashed patty, cheddar, caramelized onions, pickles & special sauce",
       fullDescription:
         "Double smashed patty, cheddar cheese, caramelized onions, house pickles and our legendary special sauce. Made fresh to order on a toasted brioche bun.",
-      price: "$14.99",
-      oldPrice: "$18.99",
+      price: "Rs.890",
+      // oldPrice: "$18.99",
       rating: 4.9,
       reviews: 128,
       calories: 620,
@@ -40,13 +58,12 @@ function Menu() {
       badge: "Hot",
       badgeClass: "hot",
     },
-
     {
       id: 2,
       image: menu2,
-      category: "pizza",
-      categoryName: "Pizza",
-      title: "Margherita Royale",
+      category: "burgers",
+      categoryName: "Burgers",
+      title: "Fillet Burger",
       description:
         "San Marzano tomatoes, buffalo mozzarella, basil & truffle oil on sourdough",
       fullDescription:
@@ -61,7 +78,6 @@ function Menu() {
       badge: "New",
       badgeClass: "new",
     },
-
     {
       id: 3,
       image: menu3,
@@ -82,7 +98,6 @@ function Menu() {
       badge: "Best Seller",
       badgeClass: "",
     },
-
     {
       id: 4,
       image: menu4,
@@ -103,7 +118,6 @@ function Menu() {
       badge: "",
       badgeClass: "",
     },
-
     {
       id: 5,
       image: menu5,
@@ -124,7 +138,6 @@ function Menu() {
       badge: "New",
       badgeClass: "new",
     },
-
     {
       id: 6,
       image: menu6,
@@ -339,9 +352,7 @@ function Menu() {
                 className={`filtbtn ${
                   filter === category.value ? "active" : ""
                 }`}
-                onClick={() =>
-                  filterMenu(category.value)
-                }
+                onClick={() => filterMenu(category.value)}
               >
                 {category.name}
               </button>
@@ -388,22 +399,22 @@ function Menu() {
 
                     {/* FAVORITE */}
 
-                     <div
-                        className="mhrt"
-                        style={{ color: "var(--primary)" }}
-                        onClick={(event) => {
-                           event.stopPropagation();
-                           toggleFavorite(item.id);
-                        }}
-                        >
-                        <i
-                           className={
-                              favorites.includes(item.id)
-                              ? "fas fa-heart"
-                              : "far fa-heart"
-                           }
-                        ></i>
-                     </div>
+                    <div
+                      className="mhrt"
+                      style={{ color: "var(--primary)" }}
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        toggleFavorite(item.id);
+                      }}
+                    >
+                      <i
+                        className={
+                          favorites.includes(item.id)
+                            ? "fas fa-heart"
+                            : "far fa-heart"
+                        }
+                      ></i>
+                    </div>
                   </div>
 
                   {/* CARD BODY */}
@@ -425,7 +436,6 @@ function Menu() {
                     {/* FOOTER */}
 
                     <div className="mfoot">
-
                       <div>
 
                         <div className="mprice">
@@ -500,10 +510,7 @@ function Menu() {
           id="menuPop"
           className="open"
           onClick={(event) => {
-            if (
-              event.target ===
-              event.currentTarget
-            ) {
+            if (event.target === event.currentTarget) {
               closeMenuPop();
             }
           }}
@@ -524,9 +531,7 @@ function Menu() {
               <i className="fas fa-times"></i>
             </button>
 
-            {/* =========================
-                POPUP IMAGE
-            ========================= */}
+            {/* POPUP IMAGE */}
 
             <div className="mpimg">
               <img
@@ -535,9 +540,7 @@ function Menu() {
               />
             </div>
 
-            {/* =========================
-                POPUP BODY
-            ========================= */}
+            {/* POPUP BODY */}
 
             <div className="mpbody">
 
@@ -557,21 +560,19 @@ function Menu() {
 
               <div id="mpStars">
 
-                {Array.from({
-                  length: 5,
-                }).map((_, index) => (
-                  <i
-                    key={index}
-                    className={
-                      index <
-                      Math.round(
-                        selectedItem.rating
-                      )
-                        ? "fas fa-star"
-                        : "far fa-star"
-                    }
-                  ></i>
-                ))}
+                {Array.from({ length: 5 }).map(
+                  (_, index) => (
+                    <i
+                      key={index}
+                      className={
+                        index <
+                        Math.round(selectedItem.rating)
+                          ? "fas fa-star"
+                          : "far fa-star"
+                      }
+                    ></i>
+                  )
+                )}
 
                 <span>
                   {" "}
@@ -590,7 +591,6 @@ function Menu() {
               {/* PRICE */}
 
               <div id="mpPrice">
-
                 {selectedItem.price}
 
                 {selectedItem.oldPrice && (
@@ -598,19 +598,15 @@ function Menu() {
                     {selectedItem.oldPrice}
                   </small>
                 )}
-
               </div>
 
-              {/* =========================
-                  META
-              ========================= */}
+              {/* META */}
 
               <div className="mpmeta">
 
                 {/* CALORIES */}
 
                 <div className="mpm">
-
                   <div className="mpmv">
                     {selectedItem.calories} kcal
                   </div>
@@ -618,13 +614,11 @@ function Menu() {
                   <div className="mpml">
                     Calories
                   </div>
-
                 </div>
 
                 {/* PREP TIME */}
 
                 <div className="mpm">
-
                   <div className="mpmv">
                     {selectedItem.time} min
                   </div>
@@ -632,13 +626,11 @@ function Menu() {
                   <div className="mpml">
                     Prep Time
                   </div>
-
                 </div>
 
                 {/* RATING */}
 
                 <div className="mpm">
-
                   <div className="mpmv">
                     {selectedItem.rating}/5
                   </div>
@@ -646,33 +638,24 @@ function Menu() {
                   <div className="mpml">
                     Rating
                   </div>
-
                 </div>
 
               </div>
 
-              {/* =========================
-                  TAGS
-              ========================= */}
+              {/* TAGS */}
 
               <div className="mptags">
-
-                {selectedItem.tags.map(
-                  (tag) => (
-                    <span
-                      className="mptag"
-                      key={tag}
-                    >
-                      {tag}
-                    </span>
-                  )
-                )}
-
+                {selectedItem.tags.map((tag) => (
+                  <span
+                    className="mptag"
+                    key={tag}
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
 
-              {/* =========================
-                  QUANTITY
-              ========================= */}
+              {/* QUANTITY */}
 
               <div className="mpqty">
 
@@ -706,9 +689,7 @@ function Menu() {
 
               </div>
 
-              {/* =========================
-                  ADD TO CART
-              ========================= */}
+              {/* ADD TO CART */}
 
               <button
                 type="button"

@@ -15,8 +15,8 @@ return (
             <div class="mqitem"><i class="fas fa-circle"></i>Lemonades</div>
             <div class="mqitem"><i class="fas fa-circle"></i>Fries</div>
             <div class="mqitem"><i class="fas fa-circle"></i>Drinks</div>
-            {/* <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Shakes</div>
-            <div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div> */}
+            <div class="mqitem"><i class="fas fa-circle"></i>Sauces</div>
+            {/* <div class="mqitem"><i class="fas fa-circle"></i>Grilled Sandwiches</div> */}
          </div>
       </div>
 );

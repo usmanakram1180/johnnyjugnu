@@ -15,6 +15,7 @@ import History from "./components/History";
 import Owners from "./components/Owners";
 import Hours from "./components/Hours";
 import Footer from "./components/Footer";
+import Reviews from "./components/Reviews";
 
 function App() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -51,6 +52,7 @@ function App() {
       <History />
       <Owners />
       <Hours />
+      <Reviews />
       <Footer />
     </div>
   );
