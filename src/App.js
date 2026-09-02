@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "./App.css";
 
 import Topbar from "./components/Topbar";
@@ -9,12 +10,15 @@ import Category from "./components/Category";
 import Search from "./components/Search";
 import About from "./components/About";
 import Menu from "./components/Menu";
+import Gallery from "./components/Gallery";
+import History from "./components/History";
+import Owners from "./components/Owners";
+import Hours from "./components/Hours";
+import Footer from "./components/Footer";
 
 function App() {
-  // Search open / close
   const [searchOpen, setSearchOpen] = useState(false);
 
-  // Search category filter
   const handleFilter = (category) => {
     console.log("Selected category:", category);
   };
@@ -41,8 +45,13 @@ function App() {
       />
 
       <About />
-      <Menu />  
 
+      <Menu />
+      <Gallery />
+      <History />
+      <Owners />
+      <Hours />
+      <Footer />
     </div>
   );
 }

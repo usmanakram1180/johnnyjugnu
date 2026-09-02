@@ -118,6 +118,7 @@ function Topbar({ onSearchClick }) {
         </div>
       </div>
     </nav>
+    
   );
 }
 
