@@ -16,7 +16,7 @@ function About () {
                   <span class="slbl">Our Story</span>
                   <h2 class="stitle text-start">We Invite You to Visit<br/>Our <span>Food Restaurant</span></h2>
                   <div class="sline lft"></div>
-                  <p class="sdesc mb-4">Founded in 2012, Sarab began as a small corner joint with a big dream - to serve food that brings people together. Today we're proud to serve thousands of happy customers every week with the same passion that started it all.</p>
+                  <p class="sdesc mb-4">Born in Lahore in 2014, Johnny & Jugnu began with a vision to redefine the fast-food experience through bold flavors and exceptional quality. From a humble beginning in Krishan Nagar, the brand grew through passion, innovation, and an unwavering commitment to great food. Today, that vision lives on in every creation — a journey from a small beginning to a celebrated name in Pakistan’s food scene..</p>
                   <div class="mb-4">
                      <div class="fti">
                         <div class="ftico r"><i class="fas fa-leaf"></i></div>

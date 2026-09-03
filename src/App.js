@@ -20,13 +20,15 @@ import Reviews from "./components/Reviews";
 function App() {
   const [searchOpen, setSearchOpen] = useState(false);
 
+  // Selected menu category
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
   const handleFilter = (category) => {
-    console.log("Selected category:", category);
+    setSelectedCategory(category);
   };
 
   return (
     <div className="App">
-
       <Topbar />
 
       <Navbar
@@ -37,7 +39,11 @@ function App() {
 
       <Marquee />
 
-      <Category />
+      {/* Category */}
+      <Category
+        onCategoryClick={handleFilter}
+        selectedCategory={selectedCategory}
+      />
 
       <Search
         isOpen={searchOpen}
@@ -47,7 +53,12 @@ function App() {
 
       <About />
 
-      <Menu />
+      {/* Menu */}
+      <Menu
+        filter={selectedCategory}
+        setFilter={setSelectedCategory}
+      />
+
       <Gallery />
       <History />
       <Owners />

@@ -5,12 +5,14 @@ import "aos/dist/aos.css";
 import menu1 from "../assets/menu/1.jpg";
 import menu2 from "../assets/menu/2.jpg";
 import menu3 from "../assets/menu/3.jpg";
-import menu4 from "../assets/menu/4.jpg";
-import menu5 from "../assets/menu/5.jpg";
+import menu4 from "../assets/menu/3.jpg";
+import menu5 from "../assets/menu/4.jpg";
 import menu6 from "../assets/menu/6.jpg";
+import menu7 from "../assets/menu/7.jpg";
+import menu8 from "../assets/menu/8.jpg";
+import menu9 from "../assets/menu/9.jpg";
 
-function Menu() {
-  const [filter, setFilter] = useState("all");
+function Menu({ filter, setFilter }) {
   const [selectedItem, setSelectedItem] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [cartCount, setCartCount] = useState(0);
@@ -45,16 +47,16 @@ function Menu() {
       categoryName: "Burgers",
       title: "Wehshi Burger",
       description:
-        "Double smashed patty, cheddar, caramelized onions, pickles & special sauce",
+        "Mighty Bun, Fresh shredded lettuce, Sauce two times (Any choice from 6 sauces - 30 Gram Each), Chicken Zinger Patty (Thigh piece breaded flour) ",
       fullDescription:
-        "Double smashed patty, cheddar cheese, caramelized onions, house pickles and our legendary special sauce. Made fresh to order on a toasted brioche bun.",
+        "Mighty Bun, Fresh shredded lettuce, Sauce two times (Any choice from 6 sauces - 30 Gram Each), Chicken Zinger Patty (Thigh piece breaded flour)",
       price: "Rs.890",
       // oldPrice: "$18.99",
       rating: 4.9,
       reviews: 128,
       calories: 620,
       time: 12,
-      tags: ["Spicy", "Bestseller", "Beef"],
+      tags: ["Spicy", "Bestseller", "Chicken"],
       badge: "Hot",
       badgeClass: "hot",
     },
@@ -65,36 +67,36 @@ function Menu() {
       categoryName: "Burgers",
       title: "Fillet Burger",
       description:
-        "San Marzano tomatoes, buffalo mozzarella, basil & truffle oil on sourdough",
+        "Potato Bun, Fresh shredded lettuce, Sauce two times (Any choice from 6 sauces - 30 Gram Each), Chicken fillet patty (Breast Piece coated with breadcrumbs) ",
       fullDescription:
-        "San Marzano tomatoes, fresh buffalo mozzarella, fragrant basil leaves, drizzled with Italian truffle oil on a hand-stretched sourdough base.",
-      price: "$19.99",
-      oldPrice: "$24.99",
+        "Potato Bun, Fresh shredded lettuce, Sauce two times (Any choice from 6 sauces - 30 Gram Each), Chicken fillet patty (Breast Piece coated with breadcrumbs)",
+      price: "Rs.890",
+      // oldPrice: "$24.99",
       rating: 4.8,
       reviews: 95,
       calories: 480,
       time: 18,
-      tags: ["Vegetarian", "New", "Italian"],
-      badge: "New",
-      badgeClass: "new",
+      tags: ["Spicy", "Bestseller", "Chicken"],
+      badge: "Bestseller",
+      badgeClass: "bestseller ",
     },
     {
       id: 3,
       image: menu3,
-      category: "chicken",
-      categoryName: "Chicken",
-      title: "Nashville Hot Chicken",
+      category: "wraps",
+      categoryName: "Wraps",
+      title: "Tortila wrap",
       description:
-        "Crispy fried chicken in fiery Nashville spice blend with honey drizzle",
+        "Large tortilla bread, Sauce two times (Any two choices from 6 sauces - 45 Gram Each), Fresh shredded lettuce, Chicken tendorline strips, Fries are in crinkle cut.",
       fullDescription:
-        "Extra-crispy fried chicken tossed in our signature fiery Nashville spice blend, served with honey drizzle and house pickles on a toasted brioche bun.",
-      price: "$12.99",
-      oldPrice: "$16.99",
+        "Large tortilla bread, Sauce two times (Any two choices from 6 sauces - 45 Gram Each), Fresh shredded lettuce,Chicken tendorline strips coated with bread crumbs.,Fries are in crinkle cut.",
+      price: "Rs.1100",
+      // oldPrice: "$16.99",
       rating: 5.0,
       reviews: 210,
       calories: 710,
       time: 15,
-      tags: ["Spicy", "Bestseller", "Crispy"],
+      tags: ["Tortilla Bread", "Fresh", "Chicken"],
       badge: "Best Seller",
       badgeClass: "",
     },
@@ -103,52 +105,52 @@ function Menu() {
       image: menu4,
       category: "wraps",
       categoryName: "Wraps",
-      title: "Loaded Fajita Wrap",
+      title: "Smol wrap",
       description:
-        "Grilled chicken, peppers, sour cream & guacamole in a warm tortilla",
+        "Smol tortilla bread, Sauce two times (Any two choices from 6 sauces - 45 Gram Each), Fresh shredded lettuce, Chicken tendorline strips, Fries are in crinkle cut.",
       fullDescription:
-        "Grilled chicken strips, sautéed bell peppers and onions, sour cream, fresh guacamole and salsa wrapped in a warm flour tortilla with melted cheddar.",
-      price: "$10.99",
-      oldPrice: "",
+        "Smol tortilla bread, Sauce two times (Any two choices from 6 sauces - 45 Gram Each), Fresh shredded lettuce, Chicken tendorline strips, Fries are in crinkle cut.",
+      price: "Rs.790",
+      // oldPrice: "",
       rating: 4.5,
       reviews: 74,
       calories: 520,
       time: 10,
-      tags: ["Grilled", "Fresh", "Mexican"],
+      tags: ["Tortilla Bread", "Fresh", "Chicken"],
       badge: "",
       badgeClass: "",
     },
     {
       id: 5,
       image: menu5,
-      category: "desserts",
-      categoryName: "Desserts",
-      title: "Nutella Lava Cake",
+      category: "wraps",
+      categoryName: "Wraps",
+      title: "Nugg Wrap",
       description:
-        "Molten chocolate cake with Nutella center, vanilla ice cream & caramel",
+        "Large tortilla bread, Sauce two times (Any two choices from 6 sauces - 45 Gram Each), Fresh shredded lettuce, Chicken Nuggets 4 pieces (whole muscle piece)",
       fullDescription:
-        "Warm molten chocolate cake with a gooey Nutella center, served alongside Madagascar vanilla bean ice cream with salted caramel drizzle and fresh berries.",
-      price: "$8.99",
-      oldPrice: "$11.99",
+        "Large tortilla bread, Sauce two times (Any two choices from 6 sauces - 45 Gram Each), Fresh shredded lettuce, Chicken Nuggets 4 pieces (whole muscle piece)",
+      price: "Rs.1100",
+      // oldPrice: "$11.99",
       rating: 4.9,
       reviews: 56,
       calories: 390,
       time: 8,
-      tags: ["Sweet", "New", "Chocolate"],
+      tags: ["Tortilla Bread", "Fresh", "Chicken"],
       badge: "New",
       badgeClass: "new",
     },
     {
       id: 6,
-      image: menu6,
-      category: "pasta",
-      categoryName: "Pasta",
-      title: "Truffle Mushroom Pasta",
+      image: menu5,
+      category: "wraps",
+      categoryName: "Wraps",
+      title: "Smol Nugg Wrap",
       description:
-        "Al dente tagliatelle, wild mushrooms, black truffle, parmesan & thyme",
+        "Smol tortilla bread, Sauce two times (Any two choices from 6 sauces - 45 Gram Each), Fresh shredded lettuce, Chicken Nuggets 2 pieces (whole muscle piece)",
       fullDescription:
-        "Al dente tagliatelle tossed with mixed wild mushrooms, freshly shaved black truffle, aged parmesan, fresh thyme and a touch of cream in garlic butter.",
-      price: "$16.99",
+        "Smol tortilla bread, Sauce two times (Any two choices from 6 sauces - 45 Gram Each), Fresh shredded lettuce, Chicken Nuggets 2 pieces (whole muscle piece)",
+      price: "Rs.790",
       oldPrice: "",
       rating: 4.9,
       reviews: 88,
@@ -157,6 +159,110 @@ function Menu() {
       tags: ["Vegetarian", "Chef's Pick", "Italian"],
       badge: "Chef's Pick",
       badgeClass: "hot",
+    },
+    {
+      id: 7,
+      image: menu6,
+      category: "wings",
+      categoryName: "Wings",
+      title: "Crispy Wings",
+      description:
+        "8 pieces serve with one sauce dip of 6 sauces.",
+      fullDescription:
+        "8 pieces serve with one sauce dip of 6 sauces.",
+      price: "Rs.780",
+      oldPrice: "",
+      rating: 4.8,
+      reviews: 96,
+      calories: 580,
+      time: 15,
+      tags: ["Crispy", "Chicken", "Spicy"],
+      badge: "Hot",
+      badgeClass: "hot",
+    },
+
+    {
+      id: 8,
+      image: menu7,
+      category: "wings",
+      categoryName: "Wings",
+      title: "Gochu Wings",
+      description:
+        "(8 pieces crispy wings embrocated with gouchu sauce.",
+      fullDescription:
+        "(8 pieces crispy wings embrocated with gouchu sauce.",
+      price: "Rs.810",
+      oldPrice: "",
+      rating: 4.7,
+      reviews: 82,
+      calories: 450,
+      time: 10,
+      tags: ["Crispy", "Chicken", "Bestseller"],
+      badge: "Bestseller",
+      badgeClass: "bestseller",
+    },
+
+    {
+      id: 9,
+      image: menu8,
+      category: "wings",
+      categoryName: "Wings",
+      title: "Tanji Wings",
+      description:
+        "(8 pieces crispy wings embrocated with Tanji sauce",
+      fullDescription:
+        "(8 pieces crispy wings embrocated with Tanji sauce.",
+      price: "Rs.810",
+      oldPrice: "",
+      rating: 4.8,
+      reviews: 64,
+      calories: 180,
+      time: 5,
+      tags: ["Crispy", "Chicken", "Bestseller"],
+      badge: "Fresh",
+      badgeClass: "new",
+    },
+
+    {
+      id: 10,
+      image: menu9,
+      category: "wings",
+      categoryName: "Wings",
+      title: "Rami Wings",
+      description:
+        "(8 pieces crispy wings embrocated with rami sauce.",
+      fullDescription:
+        "(8 pieces crispy wings embrocated with rami sauce",
+      price: "Rs.810",
+      oldPrice: "",
+      rating: 4.9,
+      reviews: 71,
+      calories: 160,
+      time: 5,
+      tags: ["Crispy", "Chicken", "Bestseller"],
+      badge: "Popular",
+      badgeClass: "hot",
+    },
+
+    {
+      id: 11,
+      image: menu5,
+      category: "sauces",
+      categoryName: "Sauces",
+      title: "Signature Sauces",
+      description:
+        "Choose from our selection of signature sauces to complete your meal.",
+      fullDescription:
+        "A selection of delicious signature sauces prepared to complement burgers, wraps, wings and nuggets.",
+      price: "Rs.100",
+      oldPrice: "",
+      rating: 4.9,
+      reviews: 55,
+      calories: 80,
+      time: 2,
+      tags: ["Sauce", "Signature", "Add-on"],
+      badge: "Popular",
+      badgeClass: "new",
     },
   ];
 
@@ -174,20 +280,20 @@ function Menu() {
       value: "burgers",
     },
     {
-      name: "Pizza",
-      value: "pizza",
-    },
-    {
-      name: "Chicken",
-      value: "chicken",
-    },
-    {
       name: "Wraps",
       value: "wraps",
     },
     {
-      name: "Desserts",
-      value: "desserts",
+      name: "Wings",
+      value: "wings",
+    },
+    {
+      name: "Nuggets",
+      value: "nuggets",
+    },
+    {
+      name: "Lemonades",
+      value: "lemonades",
     },
     {
       name: "Pasta",

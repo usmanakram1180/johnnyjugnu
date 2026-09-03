@@ -10,10 +10,10 @@ function Hero() {
                <div class="col-lg-6">
                   <div class="hbadge">
                      <div class="hbi"><i class="fas fa-star"></i></div>
-                     <span>#1 Rated Fast Food Restaurant in New York</span>
+                     <span>#1 Rated Fast Food Restaurant in Lahore</span>
                   </div>
-                  <h1 class="htitle">Delicious <span class="hl">Fast Food</span><br/>for Every Moment</h1>
-                  <p class="hdesc">Experience bold flavors crafted from premium ingredients. From crispy burgers to gourmet pizzas - every bite is an adventure worth savoring.</p>
+                  <h1 class="htitle">Johnny & Jugnu <span class="hl">It Starts with the</span><br/>Sauce. Ends with a Smile</h1>
+                  <p class="hdesc">At Johnny Jugnu, every dish is crafted with premium ingredients and exceptional attention to detail. <br />Discover bold flavors, refined creations, and a dining experience designed to delight every sense. </p>
                   <div class="d-flex flex-wrap gap-3 mb-2">
                      <a href="#menu" class="btn-red"><i class="fas fa-utensils"></i>Explore Menu</a>
                     
@@ -37,17 +37,17 @@ function Hero() {
                      <div class="hcircle">
                         <img src={wehshi} alt="Burger"/>
                      </div>
-                     <div class="fcard fc1">
+                     {/* <div class="fcard fc1">
                         <div class="fcoi r"><i class="fas fa-fire"></i></div>
                         <div><span class="fcnum">Hot Deal</span><span class="fcsm">30% off today</span></div>
-                     </div>
+                     </div> */}
                      <div class="fcard fc2">
                         <div class="fcoi y"><i class="fas fa-star"></i></div>
                         <div><span class="fcnum">4.9/5</span><span class="fcsm">2k+ reviews</span></div>
                      </div>
                      <div class="fcard fc3">
                         <div class="fcoi g"><i class="fas fa-clock"></i></div>
-                        <div><span class="fcnum">20 min</span><span class="fcsm">Fast delivery</span></div>
+                        <div><span class="fcnum">30 min</span><span class="fcsm">Fast delivery</span></div>
                      </div>
                   </div>
                </div>

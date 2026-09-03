@@ -93,20 +93,19 @@ function Reviews() {
                 </div>
 
                 <p className="testxt">
-                  Honestly the best burgers I've ever had. The smash
-                  burger is incredible - perfectly crispy edges, juicy
-                  inside, and those pickles! We come every Friday now.
+                  I ordered from them many times and the taste is always amazing. But for the first time i visited them and had a great experience as well.
+                  There was too much rush on the branch but we get our order on time that was the great management. Their wehshi 🍔 is always on top in fast food era.
                 </p>
 
                 <div className="tesauth">
                   <img
                     src={review1}
-                    alt="Monica Wilber"
+                    alt="Mudassar Aziz"
                   />
 
                   <div>
                     <div className="tesnm">
-                      Monica Wilber
+                      Mudassar Aziz
                     </div>
 
                     <div className="tesrl">
@@ -136,20 +135,18 @@ function Reviews() {
                 </div>
 
                 <p className="testxt">
-                  Ordered delivery and the food arrived hot and fresh
-                  in 22 minutes. Portions are generous. Sarab has become
-                  my go-to comfort food spot without question.
+                  Johnny & Jugnu is a favorite spot known for its consistently delicious, flavorful burgers and wraps. With fresh ingredients, quality preparation, and satisfying taste, it’s a place worth coming back to — highly recommended for burger and wrap lovers!
                 </p>
 
                 <div className="tesauth">
                   <img
                     src={review2}
-                    alt="Cameron Fox"
+                    alt="Eliazar Khan"
                   />
 
                   <div>
                     <div className="tesnm">
-                      Cameron Fox
+                      Eliazar Khan
                     </div>
 
                     <div className="tesrl">
@@ -179,9 +176,9 @@ function Reviews() {
                 </div>
 
                 <p className="testxt">
-                  The truffle pasta blew my mind. I didn't expect that
-                  quality from a fast food place. Great ambiance, super
-                  friendly staff. Highly recommended!
+                 Best wraps in town, with unique flavors and delicious sauces.
+                  The chicken is perfectly seasoned, and every bite tastes amazing.
+Just one request: please serve the wraps hot and fresh!
                 </p>
 
                 <div className="tesauth">
