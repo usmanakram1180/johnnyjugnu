@@ -16,6 +16,10 @@ import Owners from "./components/Owners";
 import Hours from "./components/Hours";
 import Footer from "./components/Footer";
 import Reviews from "./components/Reviews";
+import Blog from "./components/Blog";
+import Newsletter from "./components/Newsletter";
+import Contact from "./components/Contact";
+
 
 function App() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -64,6 +68,9 @@ function App() {
       <Owners />
       <Hours />
       <Reviews />
+      <Blog />
+      <Newsletter />
+      <Contact />
       <Footer />
     </div>
   );

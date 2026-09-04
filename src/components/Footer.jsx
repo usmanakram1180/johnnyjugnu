@@ -23,7 +23,7 @@ function Footer() {
 
             <div className="col-lg-4">
               <div className="fnm">
-                Sar<span>ab</span>
+                Johnny<span>Jugnu</span>
               </div>
 
               <p className="fdesc">
@@ -92,7 +92,7 @@ function Footer() {
                 </div>
                 <div className="fciinfo">
                   <strong>Email</strong>
-                  hello@sarabfood.com
+                  hello@johnnyjugnufood.com
                 </div>
               </div>
 
@@ -114,8 +114,8 @@ function Footer() {
           <div className="container">
             <div className="d-flex justify-content-between align-items-center flex-wrap gap-2">
               <p>
-                &copy; 2026 <span>Sarab Restaurant</span>. All Rights Reserved by{" "}
-                <a
+                &copy; 2026 <span>johnnyjugnu Restaurant</span>. All Rights Reserved by{" "}
+                {/* <a
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-0 fw-bold text-success"
@@ -134,7 +134,7 @@ function Footer() {
                   href="https://themewagon.com"
                 >
                   ThemeWagon
-                </a>
+                </a> */}
               </p>
 
               <div>

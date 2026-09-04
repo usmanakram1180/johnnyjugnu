@@ -13,7 +13,7 @@ function History() {
                   <div class="tl-left">
                      <div class="tlyear">2012</div>
                      <h5>Evolution of Restaurants</h5>
-                     <p>Sarab opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
+                     <p>johnnyjugnu opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
                   </div>
                   <div class="tl-center">
                      <div class="tldot"></div>
@@ -21,7 +21,7 @@ function History() {
                   <div class="tl-right">
                      <div class="tlyear">2012</div>
                      <h5>Evolution of Restaurants</h5>
-                     <p>Sarab opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
+                     <p>johnnyjugnu opens its first 20-seat diner on Flavor Street. Within 3 months, lines stretch around the block every evening as word of our food spreads.</p>
                   </div>
                </div>
                <div class="tli">

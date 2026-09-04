@@ -2,6 +2,11 @@ import React from "react";
 import logo from "../assets/johnnyjugnu.webp";
 
 function Topbar({ onSearchClick }) {
+  const scrollToSection = (id) => {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth",
+  });
+};
   return (
     <nav className="navbar navbar-expand-lg" id="nav">
       <div className="container">
@@ -47,49 +52,70 @@ function Topbar({ onSearchClick }) {
           {/* Navigation */}
           <ul className="navbar-nav mx-auto">
 
-            <li className="nav-item">
-              <a className="nav-link active" href="#hero">
-                Home
-              </a>
-            </li>
+  <li className="nav-item">
+    <button
+      className="nav-link active"
+      onClick={() => scrollToSection("hero")}
+    >
+      Home
+    </button>
+  </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About
-              </a>
-            </li>
+  <li className="nav-item">
+    <button
+      className="nav-link"
+      onClick={() => scrollToSection("about")}
+    >
+      About
+    </button>
+  </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#menu">
-                Menu
-              </a>
-            </li>
+  <li className="nav-item">
+    <button
+      className="nav-link"
+      onClick={() => scrollToSection("menu")}
+    >
+      Menu
+    </button>
+  </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#chefs">
-                Chefs
-              </a>
-            </li>
+  <li className="nav-item">
+    <button
+      className="nav-link"
+      onClick={() => scrollToSection("chefs")}
+    >
+      Chefs
+    </button>
+  </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#reservation">
-                Reservation
-              </a>
-            </li>
+  {/* <li className="nav-item">
+    <button
+      className="nav-link"
+      onClick={() => scrollToSection("reservation")}
+    >
+      Reservation
+    </button>
+  </li> */}
 
-            <li className="nav-item">
-              <a className="nav-link" href="#testimonials">
-                Reviews
-              </a>
-            </li>
+  <li className="nav-item">
+    <button
+      className="nav-link"
+      onClick={() => scrollToSection("testimonials")}
+    >
+      Reviews
+    </button>
+  </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#contact-section">
-                Contact
-              </a>
-            </li>
+  <li className="nav-item">
+    <button
+      className="nav-link"
+      onClick={() => scrollToSection("contact-section")}
+    >
+      Contact
+    </button>
+  </li>
 
-          </ul>
+</ul>
 
           {/* Right Side Buttons */}
           <div className="d-flex align-items-center gap-1">
